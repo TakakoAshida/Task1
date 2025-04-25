@@ -1,6 +1,44 @@
-p {
-    color: red;
-    width: 500px;
-    border: 1px solid black;
+html {
+    font-size: 10px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルの高さになった */
+    font-family:
+      "Open Sans", sans-serif; /* これが Google フォントから取得した残りの出力になるはず。 */
   }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p,
+  li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  
+html{
+    background-color: #00539f;
+}
+
+body{
+    width: 600px;                   /* bodyは常に600ピクセルの幅 */
+    margin: 0 auto;                 /* 最初の値は要素の上下の辺に影響、2番目の値は左右に影響、autoは残った余白を左右均等に配分*/
+    background-color: #ff9500;      
+    padding: 0 20px 20px 20px;      /* コンテンツの周りに少しのスペースを確保、上、右、下、左の順*/
+    border: 5px solid black;       /* 境界の太さ、スタイル、色の値を設定*/
+}
+
+h1{
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;     /* 最初は影のテキストからの水平オフセット、2番目は垂直オフセット、3番目は影をぼかす半径、4番目は影の基本色*/
+}
+
+img{
+    display: block;
+    margin: 0;
+    max-width: 100%;        /*画像が本体の幅(600px)より大きい場合はこれ以上大きくならないように設定*/
+    
+}
   
