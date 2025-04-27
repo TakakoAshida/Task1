@@ -1,10 +1,10 @@
-// 見出しの参照をmyHeadingに格納
-const myHeading = document.querySelector("h1");
-// myHeadingのテキストを変更
-myHeading.textContent = "Hello world!";
+const myImage = document.querySelector("img");
 
-// アロー関数は()=>をfunction()の代わりに使用する
-document.querySelector("html").addEventListener("click", function () {
-    alert("痛っ! つつかないで!");
-  });
-  
+myImage.onclick = () => {
+    const mySrc = myImage.getAttribute("src");
+    if (mySrc === "images/firefox-icon.png") {
+        myImage.setAttribute("src", "images/gopher_photo.png");
+    }else {
+        myImage.setAttribute("src", "images/firefox-icon.png");
+    }
+};
